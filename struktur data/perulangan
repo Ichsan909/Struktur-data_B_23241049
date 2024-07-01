@@ -1,0 +1,20 @@
+def hitung_faktorial(n):
+    faktorial = 1
+    # Menggunakan perulangan for untuk menghitung faktorial
+    for i in range(1, n + 1):
+        faktorial *= i
+    return faktorial
+
+def main():
+    # Meminta input dari pengguna
+    angka = int(input("Masukkan sebuah angka untuk menghitung faktorial: "))
+    
+    # Memeriksa jika angka negatif
+    if angka < 0:
+        print("Faktorial tidak bisa dihitung untuk angka negatif.")
+    else:
+        hasil = hitung_faktorial(angka)
+        print(f"Faktorial dari {angka} adalah: {hasil}")
+
+if __name__ == "__main__":
+    main()
